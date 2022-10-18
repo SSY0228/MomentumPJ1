@@ -227,5 +227,6 @@ small {
     input[type="text"] {
       font-size: 2rem; 
     } 
+    #quotes { display: none; }
   }
 }
