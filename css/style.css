@@ -214,12 +214,12 @@ small {
 
   #quotes {
     position: fixed;
-    bottom: 10px; 
+    bottom: 3vh; 
     width: 100%;
     height: auto;
     color: #fff; 
     text-align: center;
-    transform: translateY(20px);
+    transform: translateY(2vh);
     transition: transform 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
   }
   #quotes .author { opacity: 0; transition: opacity 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045); }
@@ -246,6 +246,5 @@ small {
     input[type="text"] {
       font-size: 2rem; 
     } 
-    #quotes { display: none; }
   }
 }
