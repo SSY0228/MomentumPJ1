@@ -22,9 +22,8 @@ body {
 
 
 ul, 
-li{
-  list-style-type:"🗸"; 
-  list-style-position: outside;
+li {
+  list-style-type: none;
 }
 
 
@@ -122,19 +121,19 @@ form#todoform {
 
 ul#todoList {
   display: flex;
+  flex-flow: column wrap;
   margin: 0 auto;
-  width: 100%;
   color: #fff;
+  background: rgba(255, 255, 255, 0.2);
   font-size: 2rem;
 }
 
 #todoList > li {
   display: inline-flex;
-  padding-left: .5rem;
-  background: rgba(255, 255, 255, 0.2);
 }
 
 #todoList > li::before {
+  content:"🗸"; 
   display: flex;
   align-self: center;
 }
@@ -193,9 +192,10 @@ small {
   #todoList > li {
     width: 100%;
   }
-  /* #todoList > li::before {
-    margin-right: 20px;
-  } */
+  #todoList > li::before {
+    margin-left: -30px;
+    margin-right: 10px;
+  }
   #quotes {
     position: fixed;
     bottom: 10px;
@@ -240,6 +240,10 @@ small {
   }
   #todoList > li {
     width: 100%;
+  }
+  #todoList > li::before {
+    margin-left: -30px;
+    margin-right: 10px;
   }
   #quotes {
     position: fixed;

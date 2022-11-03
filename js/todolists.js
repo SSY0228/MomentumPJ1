@@ -44,7 +44,7 @@ function handleToDoSubmit(event) {
   saveTodos();
 }
 
-todoForm.addEventListener("submit", handleToDoSubmit);
+toDoform.addEventListener("submit", handleToDoSubmit);
 
 const savedTodos = localStorage.getItem(TODOS_KEY);
 if (savedTodos !== null) {
