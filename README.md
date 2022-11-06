@@ -15,3 +15,12 @@ About My To do list project
 4. added >> only for PC browser and renewed css3 for responsive size.
 
 5. used Pure javascript, html5, css3
+
+
+*************************************************************************************
+
+2022-10 ~ 2022-11
+Edit CSS3 to Resoponsive type for PC browser
+(Not mobile)
+
+
