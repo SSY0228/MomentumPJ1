@@ -26,6 +26,17 @@ const randomimg = images[Math.floor(Math.random() * images.length)];
 const backimg = document.createElement("img");
 
 backimg.src = `images/${randomimg}`;
-backimg.width = "1920";
-
+backimg.width = window.innerWidth;
+backimg.height = window.innerHeight;
 document.body.appendChild(backimg);
+
+
+// font-size 대응
+if (window.screen.width <= 1920) {
+  document.documentElement.style.fontSize = "62.5%"; //10px 1em 1rem
+} else if (window.screen.width <= 2560) {
+  document.documentElement.style.fontSize = "87.5%"; // 14px 1em 1rem
+} else if (window.screen.width > 2560) { 
+  // 3840 include
+  document.documentElement.style.fontSize = "100%"; //16px 1em 1rem
+}

@@ -32,11 +32,14 @@ li {
 }
 
 img {
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
 }
 
 /* css layout */
 section {
+  overflow: hidden;
   width: 100%;
   height: 100%;
   padding: 0;
@@ -112,11 +115,11 @@ form#todoform {
 }
 
 #todoform > input[type="text"] {
-  border-bottom: 0.375rem solid #fff;
+  border-bottom: .375rem solid #fff;
   outline: none;
   appearance: none;
   background: transparent;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 ul#todoList {
@@ -125,11 +128,12 @@ ul#todoList {
   margin: 0 auto;
   color: #fff;
   background: rgba(255, 255, 255, 0.2);
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 #todoList > li {
   display: inline-flex;
+  align-items: center;
 }
 
 #todoList > li::before {
@@ -153,8 +157,8 @@ ul#todoList {
   appearance: none;
   background: transparent;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
   font-size: 2rem; 
 }
 
@@ -163,31 +167,34 @@ small {
   right: 10px;
   bottom: 10px;
   color: #fff;
+  font-size: 1.2rem;
 }
 
 /* renewal responsive */
 
 @media screen and (min-width: 1025px) {
   #clock {
-    font-size: 12rem;
+    font-size: 10rem;
   }
   #greeting {
     font-size: 5rem;
   }
 
   form#login-form {
-    width: 60%;
+    width: 70vw;
   }
+
   #login-form > input[type="submit"] {
-    font-size: 3rem;
+    font-size: 2rem;
   }
+
   input[type="text"] {
-    width: 500px;
-    font-size: 4rem;
+    width: 40rem;
+    font-size: 3.5rem;
   }
 
   ul#todoList {
-    width: 465px;
+    width: 40rem;
   }
   #todoList > li {
     width: 100%;
@@ -220,23 +227,23 @@ small {
 }
 @media screen and (max-width: 1024px) {
   #clock {
-    font-size: 12rem;
+    font-size: 10rem;
   }
   #greeting {
     font-size: 5rem;
   }
   form#login-form {
-    width: 70%;
+    width: 100vw;
   }
   #login-form > input[type="submit"] {
     font-size: 2rem;
   }
   input[type="text"] {
-    width: 400px;
-    font-size: 4rem;
+    width: 40rem;
+    font-size: 3.5rem;
   }
   ul#todoList {
-    width: 365px;
+    width: 36.5rem;
   }
   #todoList > li {
     width: 100%;
@@ -267,9 +274,9 @@ small {
     opacity: 1;
   }
 
-  @media screen and (min-width: 481px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     form#login-form {
-      width: 100%;
+      width: 100vw;
     }
     #clock {
       font-size: 8rem;
@@ -279,9 +286,13 @@ small {
     }
 
     input[type="text"] {
+      width: 70vw;
       font-size: 3rem;
     }
 
+    ul#todoList {
+      width: 70vw;
+    }
     #todoform > input[type="text"] {
       font-size: 2rem;
     }
